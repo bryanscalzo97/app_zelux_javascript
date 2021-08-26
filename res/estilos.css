@@ -1,0 +1,357 @@
+/**
+ *	Versión 2.0.0
+ *	-------------
+ */
+@charset "utf-8";
+
+/**
+ *	Fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+
+/**
+ *	First Mobile
+ */
+
+/**	General */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+	line-height: 1;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+
+body {
+	background-color: #D4EAF3;
+}
+
+/**	Header 
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 4em;
+	background-color: #1A4A5E;
+}
+
+header > h1 {
+	font-family: 'Montserrat';
+	font-size: 2.4em;
+	line-height: 1.5;
+	font-weight: 700;
+	text-align: center;
+	color: #D4EAF3;
+}
+
+header > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+header > div > p {
+	font-size: 1.2em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+	color: #D4EAF3;	
+}
+
+header > div > p > span {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+header > div > button {
+	margin-top: .5em;
+	border-radius: .5em;
+	border: 1px solid #1A4A5E;
+	padding: 0 .5em;
+	background: #D4EAF3;
+	font-size: 1.2em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+	color: #1A4A5E;
+	cursor: pointer;
+}
+
+header > div > button:hover {
+	border: 1px solid #D4EAF3;
+	background: #1A4A5E;
+	color: #D4EAF3;	
+}
+*/
+/**	Main */
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 14em;
+	padding: 2em 4em;
+}
+
+main section {
+	margin-bottom: 4em;
+}
+
+main section h2 {
+	margin: .4em;
+	font-size: 2.4em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: center;
+	color: #1A4A5E;	
+}
+
+#productos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#productos > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 1em;
+	width: 30em;
+	padding: 1em;
+	background-color: #EEE;
+}
+
+#productos > div > img {
+	width: 25%;
+}
+
+#productos > div > div {
+	width: 70%;
+}
+
+#productos > div h3 {
+	font-size: 1.8em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+	color: #1A4A5E;
+}
+
+#productos > div p {
+	font-size: 1.4em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+	color: #1A4A5E;	
+}
+
+#productos > div button {
+	border-radius: .5em;
+	border: 1px solid #D4EAF3;
+	padding: 0 .5em;
+	background: #1A4A5E;
+	font-size: 1.2em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: center;
+	color: #D4EAF3;
+	cursor: pointer;
+}
+
+#productos > div button:hover {
+	border: 1px solid #1A4A5E;
+	background: #D4EAF3;
+	color: #1A4A5E;	
+}
+
+.modal {
+	position: fixed;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.9);
+}
+
+.modal > a {
+	position: fixed;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 1em;
+	right: 1em;
+	border-radius: 1em;
+	width: 2em;
+	height: 2em;
+	background-color: rgba(255,255,255,.9);
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;
+	color: #1A4A5E;
+	text-decoration: none;
+}
+
+.modal > a:hover {
+	background-color: #1A4A5E;
+	color: rgba(255,255,255,.9);
+}
+
+.modal > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 80%;
+	padding: 1em;
+	background-color: #FFF;
+}
+
+.modal > div > img {
+	width: 100%;
+}
+
+.modal h3 {
+	font-size: 1.8em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+	color: #1A4A5E;
+}
+
+.modal p {
+	font-size: 1.4em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+	color: #1A4A5E;	
+}
+
+.modal span {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.modal button {
+	margin-top: 1em;
+	border-radius: .5em;
+	border: 1px solid #D4EAF3;
+	width: 100%;
+	padding: 0 .5em;
+	background: #1A4A5E;
+	font-size: 1.8em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: center;
+	color: #D4EAF3;
+	cursor: pointer;
+}
+
+.modal button:hover {
+	border: 1px solid #1A4A5E;
+	background: #D4EAF3;
+	color: #1A4A5E;	
+}
+
+.modal ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.modal li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	font-size: 1.4em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+	color: #1A4A5E;
+}
+
+.modal li a {
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: left;
+	color: #1A4A5E;
+}
+
+/**	Footer */
+footer {
+
+	bottom: 0;
+	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 2em 4em;
+	background-color: #1A4A5E;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	list-style: none;
+}
+
+footer ul li {
+	font-family: 'Montserrat';
+	font-size: 1.6em;
+	line-height: 1.5;
+	font-weight: 400;
+	text-align: center;
+	color: #D4EAF3;
+}
+
+footer ul li a {
+	font-family: 'Montserrat';
+	font-size: 1em;
+	text-decoration: none;
+	color: #D4EAF3;
+}
+
+footer ul li a:hover {
+	color: #4A9B82;
+}
+
+
+/**
+ *	Web
+ */
+@media screen and (min-width: 960px) {
+
+	/**	Footer */
+	footer ul {
+		flex-direction: row;
+	}
+
+}

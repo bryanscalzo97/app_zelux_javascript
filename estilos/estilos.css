@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    
+}
+#finCompra, #btnVaciarCarrito {
+    background: none;
+        color: inherit;
+        border: solid 1px white;
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+}
+
+/*----------------------------SPLASH---------------------------------*/
+.splash{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #343031;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: open;
+    animation-duration: 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+.splash img {
+margin: 20px;
+}
+.splash::after, .splash::before{
+    content: "";
+    position: absolute;
+    background-color: #343031;
+    height: 100vh;
+    width: 35vw;
+    z-index: 99;
+    animation-name: open;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+.splash::after{
+    left: 30vw;
+    animation-delay: 200ms;
+}
+.splash::before{
+    left: 0;
+    animation-delay: 2s;
+}
+
+@keyframes open{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(100%, 0);
+    }
+}
+/*---------------------BARRA SUPERIOR-------*/
+#logo {
+    width: 150px;
+    height: 31px;
+    background: url("imagenes/logomobile.png");
+    font-size: 0;
+    
+    /* Corregimos el posicionamiento y el z-index ya que ahora la barra queda fija. */
+    
+    position: fixed;            
+    top: 8px;
+    left: 20px;
+    z-index: 1031;
+}
+header {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+ position: static;  
+ background-color: #343031;
+
+}
+.navbarsup {
+    background-color: #343031 !important;
+}
+
+/*----------------------COLGANTES-----------*/
+#mitexto {
+    background-color: red;
+}
+.botoncomprar {
+    background-color: #F1C96D;
+    text-decoration: none;
+    border-radius: 3px;
+    color: black;
+    padding: 0.5rem;
+    
+
+}
+.botoncomprar1 {
+    background-color: #F1C96D;
+    text-decoration: none;
+    border-radius: 3px;
+    color: black;
+    padding: 0.5rem;
+    height: 100%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+
+}
+.boton2 {
+    text-decoration: none;
+    border: solid grey;
+    border-radius: 3px;
+    color: black;
+    padding: 0.5rem !important;
+
+}
+.botonz {
+    border: solid gray 0.1px;
+    border-radius: 3px;
+    padding: 1rem;
+}
+.botony {
+    border: solid gray 0.1px;
+    border-radius: 3px;
+    padding:1rem;
+    margin: 0 0 1rem 0;
+}
+.int {
+    padding:0;
+    margin:0;
+    
+}
+.padding {
+    padding: 0;
+    box-sizing: border-box;
+}
+.padding {
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.nop {
+    padding: 0;
+    margin: 0;
+    
+}
+.titulo1 {
+    font-size: 1.5rem;
+}
+del,p {display:inline}
+del {color: grey;
+    padding: 0.5rem;
+}
+.img1 {
+    border-radius: 3px 0 0 3px;
+}
+/*--------------------------COMPRA1--------------------------------*/
+#prod1{
+    margin: 0rem 1rem 0rem 1rem;
+    font-size: 24px;
+   
+}
+.botony a{
+font-weight: bold;
+}
+    
+/*---------------------------1ERA SECCION---------------------------*/
+
+#divbanner1 h1 {
+    background-image: url(../items/banner1.png);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../items/banner1.png) ;
+    background-repeat: no-repeat; background-position: center center;
+    height: 35vh;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 20vh;
+    border-radius: 10px;
+
+      
+}
+#divbanner1 {
+    box-sizing: border-box;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    margin-top: 1.5rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+
+   
+}
+
+#menuTodo h2 a, #menuColgantes h2 a, #menuBombillas h2 a, #banner5 h2 a {
+    padding-top: 9rem;
+    font-size: 20px;
+    color: white !important;
+    
+}
+#menuTodo h2 , #menuColgantes h2 , #menuBombillas h2 , #banner5 h2  {
+    padding-top: 9rem;
+    font-size: 20px;
+    color: white !important;
+    
+}
+.contb {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.colorb {
+    color: black !important;
+    text-decoration: none;
+}
+
+.padingprod {
+ padding: 0 1rem 0 1rem;
+}
+
+
+
+
+#menuTodo {
+    background-image: url(../items/banner2.png);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../items/banner2.png) ;
+
+    background-repeat: no-repeat; background-position: center center;
+    width: 100%;
+    height: 25vh;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0;
+}
+#menuColgantes {
+    background-image: url(../items/banner3.png);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../items/banner3.png) ;
+
+    background-repeat: no-repeat; background-position: center center;
+    width: 100%;
+    height: 25vh;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0;
+}
+#menuBombillas {
+    background-image: url(../items/banner4.png);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../items/banner4.png) ;
+
+    background-repeat: no-repeat; background-position: center center;
+    width: 100%;
+    height: 25vh;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0;
+}
+#banner5 {
+    
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../items/banner5.png) ;
+
+    background-repeat: no-repeat; background-position: center center;
+    width: 100%;
+    height: 25vh;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0;
+}
+.prod {
+    padding: 1em 0 1em 0;
+}
+
+#divbanner1 {
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+#ahora12 {
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #F1C96D;
+    border-radius: 10px;
+    color: black;
+}
+#dos {
+    margin-bottom: 90px;
+}
+#uno h2, #uno a {
+    text-decoration: none !important;
+    color: white ;
+}
+.space {
+    padding: 2%;
+}
+/*--------------------------COMPRA1-----------------------------------*/
+#compra {
+
+    padding: 0 0 1em 0;
+    margin: 0;
+    
+}
+#imgp {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+#botonback {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#botonback2 {
+    height: 30px;
+    width: 30px;
+
+}
+#product1 {
+    border: solid grey 0.1px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-radius: 3px;
+    
+
+}
+.cont1 {
+    
+    padding: 0 0 15px 0;
+    
+
+}
+#compra1 {
+    padding: 0;
+}
+
+/*---------------------------NAV BAR---------------------------------*/
+.navbar {
+    padding: 0;
+    background: white;
+}
+
+.navbar-nav {
+    width: 100%;
+    background: none;
+    flex-wrap: nowrap;
+}
+.nav-item {
+    flex: 1;
+    padding: 0;
+}
+.nav-link {
+    background-color: none;
+    text-align: center;
+}
+
+/* Le damos un tamaño a las img de los botones y les aplicamos transparencia para poner como activa solo la vista actualmente en foco de navegación con opacidad 1. */
+
+img[src*=".svg"] {
+    height: 1.25em;
+    opacity: .5;
+}
+
+/* Inicialmente, ponemos como activa la img del primer botón (la sección uno) con opacidad 1. */
+
+nav .nav-item:nth-of-type(1) img[src*=".svg"] {
+    opacity: 1;
+}
+
+/* Con cualquier page en target (los containers que tienen aplicado el attr data-role page que corresponden a cada vista de la app), pasamos a todas las img a opacidad .5 (para desmarcar la que estuviera activa ya que no sabemos cuál era). Por eso ubicamos el nav por debajo de todo el resto para poder seleccionarlo con el operador de hermanos (~). */
+
+[data-role="page"]:target ~ nav .nav-item img[src*=".svg"] {
+    opacity: .5;
+}
+
+/* Y luego evaluamos qué page está en target para marcar la img del botón correspondiente como activa con opacidad 1. */
+
+#uno:target ~ nav .nav-item:nth-of-type(1) img[src*=".svg"] {
+    opacity: 1;
+}
+
+#dos:target ~ nav .nav-item:nth-of-type(2) img[src*=".svg"] {
+    opacity: 1;
+}
+
+#tres:target ~ nav .nav-item:nth-of-type(3) img[src*=".svg"] {
+    opacity: 1;
+}
+
+#cuatro:target ~ nav .nav-item:nth-of-type(4) img[src*=".svg"] {
+    opacity: 1;
+}
+
