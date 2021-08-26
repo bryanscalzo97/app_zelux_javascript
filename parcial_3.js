@@ -171,7 +171,7 @@ var divPrecioBomb;
 var divInfoBomb;
 function renderBombillas() {
 	limpProductos();
-	setTimeout(function () { /* ACCIONES */agregarPopup() }, 1000);
+	//setTimeout(function () { /* ACCIONES */agregarPopup() }, 1000);
 	
 	for (var i = 0; i < aBombillas.length; i++) {
 		infoBombillas = d.createElement('div');
@@ -277,7 +277,7 @@ var divPrecioColg;
 var divInfoColg;
 function renderColgantes() {
 	limpProductos();
-	setTimeout(function () { /* ACCIONES */agregarPopup() }, 1000);
+	//setTimeout(function () { /* ACCIONES */agregarPopup() }, 1000);
 	for (var i = 0; i < aColgantes.length; i++) {
 	
 
@@ -405,7 +405,7 @@ var divInfoItems;
 
 function renderItems() {
 	limpProductos();
-	setTimeout(function () { /* ACCIONES */agregarPopup() }, 1000);
+	//setTimeout(function () { /* ACCIONES */agregarPopup() }, 1000);
     for (var i = 0; i < aProductos.length; i++) {
        
 		infoItems = d.createElement('div');
